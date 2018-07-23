@@ -1,0 +1,36 @@
+.headerWrapper {
+    grid-row: headerStart/headerEnd;
+    grid-column: contentStart/contentEnd;
+
+    display: grid;
+    grid-template-columns: [s] 1fr [e];
+    grid-template-rows: [titleStart] 3rem [titleEnd subStart] 2rem [subEnd];
+
+    &__title {
+        grid-column: s/e;
+        grid-row: titleStart/titleEnd;
+    }
+
+    &__subTitle {
+        grid-column: s/e;
+        grid-row: subStart/subEnd;
+    }
+}
+
+.headerWrapper {
+    padding-top: 4rem;
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3rem;
+        color: $color-gray-one;
+    }
+
+    &__subTitle {
+        color: $color-red-one;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+}
