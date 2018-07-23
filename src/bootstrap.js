@@ -6,13 +6,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import SignIn from './components/auth/signIn';
 import SignUp from './components/auth/signUp';
-import HeaderWrapper from './components/headerWrapper';
+import Layout from './components/layout';
 
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
 
@@ -21,10 +21,11 @@ function main() {
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Switch>
-          <HeaderWrapper>
+          <Layout>
             <Route path='/' exact component={SignIn}/>
+            <Route path='/signin' exact component={SignIn}/>
             <Route path='/signup' component={SignUp}/>
-          </HeaderWrapper>
+          </Layout>
         </Switch>
       </BrowserRouter>
     </Provider>

@@ -1,4 +1,4 @@
-.headerWrapper {
+.header {
     grid-row: headerStart/headerEnd;
     grid-column: contentStart/contentEnd;
 
@@ -17,7 +17,7 @@
     }
 }
 
-.headerWrapper {
+.header {
     padding-top: 4rem;
 
     &__title {
