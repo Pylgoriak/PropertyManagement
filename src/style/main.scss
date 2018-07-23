@@ -1,5 +1,15 @@
-@import 'variables';
-@import 'base';
-@import 'header';
-@import 'signIn';
-@import 'signUp';
+//MAIN FILES
+    // BASE
+        @import 'variables';
+        @import 'base';
+
+    // HEADER {PUSHED FROM CONTENT FILES}
+        @import 'header';
+
+    // AUTH
+        @import 'signIn';
+        @import 'signUp';
+
+// CONTENT FILES
+    // HELPERS
+        @import 'formTitle';
