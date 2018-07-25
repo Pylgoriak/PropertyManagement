@@ -1,4 +1,22 @@
 .signIn {
     grid-row: contentStart/contentEnd;
     grid-column: contentStart/contentEnd;
+
+    display: grid;
+    justify-self: center;
+}
+
+.signIn-form {
+
+    &__title {
+        width: 100%;
+    }
+
+    &__email {
+
+    }
+
+    &__password {
+
+    }
 }

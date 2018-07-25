@@ -1,18 +1,16 @@
- //IMPORTS   
-    //MAIN FILES
-        // BASE
-            @import 'variables';
-            @import 'base';
 
-        // HEADER {|pull=`PULLED FROM ~~CONTENT FILES`|}
-            @import 'header';
+// BASE
+    @import 'variables';
+    @import 'base';
 
-        // AUTH
-            @import 'signIn';
-            @import 'signUp';
+// HEADER
+    @import 'header';
 
-    // CONTENT FILES
-        // |content="@import 'header'", action=`PUSHED TO MAIN^FILES~HEADER`|
+// AUTH
+    @import 'signIn';
+    @import 'signUp';
+    
 
-    // HELPERS
-        @import 'formTitle';
+// HELPERS
+    @import 'formTitle';
+    @import 'formFields';
