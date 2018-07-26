@@ -1,10 +1,18 @@
 .textLink {
     font-size: 1.4rem;
     line-height: 1.7rem;
-    text-decoration-line: none;
+    text-decoration: none;
     margin: 0 38px;
+
+    &:visited {
+        color: $Base-Color;
+    }
 }
 
 .links {
     margin-left: 140px;
+}
+
+.link {
+    margin-left: 240px;
 }

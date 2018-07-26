@@ -9,38 +9,41 @@ class SignInForm extends Component {
     render() {
         return (
             <form className="signInForm">
-                <FormTitle className="signIn-form__title" text="Sign in" />
+                <FormTitle className="signIn-form__title" text="Login" />
 
-                <Field
-                    className="signIn-form__email"
-                    title="Email"
-                    placeholder="Enter Email"
-                    name="email"
-                    type="email"
-                    component={FormInput}
-                />
+                <div className='margin'>
+                    <Field
+                        className="signIn-form__email"
+                        title="Email"
+                        placeholder="Enter Email"
+                        name="email"
+                        type="email"
+                        component={FormInput}
+                    />
 
-                <Field
-                    className="signIn-form__password"
-                    title="Password"
-                    placeholder="Enter Password"
-                    name="password"
-                    type="password"
-                    component={FormInput}
-                />
+                    <Field
+                        className="signIn-form__password"
+                        title="Password"
+                        placeholder="Enter Password"
+                        name="password"
+                        type="password"
+                        component={FormInput}
+                    />
 
-                <Field
-                    className="signIn-form__login"
-                    title="Login"
-                    name="login"
-                    type="submit"
-                    component={FormButton}
-                />
+                    <Field
+                        className="signIn-form__login"
+                        title="Login"
+                        name="login"
+                        type="submit"
+                        component={FormButton}
+                    />
 
-                <div className='signIn-form__textLinks links'>
-                <TextLink to='/forgot' text="Forgot Password" />
-                <TextLink to='/signup' text="Not A Member? Register Here" />
+                    <div className='signIn-form__textLinks links'>
+                    <TextLink to='/forgot' text="Forgot Password" />
+                    <TextLink to='/signup' text="Not A Member? Register Here" />
+                    </div>
                 </div>
+                
             </form>
         )
     }

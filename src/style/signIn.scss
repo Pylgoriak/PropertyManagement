@@ -1,14 +1,9 @@
 .signIn {
     grid-row: contentStart/contentEnd;
     grid-column: contentStart/contentEnd;
-
-    display: grid;
-    justify-self: center;
 }
 
 .signIn-form {
-    display: grid;
-
     &__title {
         // width: 100%;
         margin-top: 6.6rem;
@@ -18,7 +13,8 @@
         margin-top: 7.2rem;
     }
 
-    &__password {
+    &__password,
+     {
         margin-top: 4.4rem;
     }
 

@@ -2,3 +2,26 @@
     grid-row: contentStart/contentEnd;
     grid-column: contentStart/contentEnd;
 }
+
+
+.SignUp-form {
+    &__title {
+        // width: 100%;
+        margin-top: 6.6rem;
+    }
+
+    &__fullName {
+        margin-top: 6.2rem;
+    }
+
+    &__unit,
+    &__email,
+    &__password,
+    &__textLinks {
+        margin-top: 4rem;
+    }
+
+    &__create-account {
+        margin-top: 6.8rem;
+    }
+}
